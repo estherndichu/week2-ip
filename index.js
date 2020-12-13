@@ -1,0 +1,69 @@
+function output() {
+    var year = document.getElementsByClassName("year").value;
+    var yy = parseInt(year);
+    var month = document.getElementsByClassName("month").value;
+    var mm = parseInt(month);
+    var date = document.getElementsByClassName("date").value;
+    var dd = parseInt(date);
+    var cc = (yy-1)/100 + 1;
+    var birthDay = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+};
+var femaleAkan = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+var maleAkan = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+
+var result = parseInt(((cc/4)-2*cc-1)+ ((5*yy/4)) + ((26*(mm+1)/10))+99) % 7;
+/*alert about invalid date*/
+if (document.getElementsByClassName("gender")) {
+    var gender = "female";
+}
+else {
+    var gender = "male";
+}
+if(mm <1 || mm >12) {
+    alert("please enter a valid month ; 1 - 12");
+}
+else if (dd < 1 || dd > 31) {
+    alert ("please enter a valid date; 1-31");
+}
+else if (math.round(result) == 0 && gender === "female") {
+    document.getElementsByClassName("display").innerHTML = "Your Akan name is " + "femaleAkan[0]"
+}
+else if (math.round(result) == 1 && gender === "female") {
+    document.getElementsByClassName("display").innerHTML = `Your Akan name is femaleAkan[1]`
+}
+else if (math.round(result) == 2 && gender === "female") {
+    document.getElementsByClassName("display").innerHTML = `Your Akan name is femaleAkan[2]`
+}
+else if (math.round(result) == 3 && gender === "female") {
+    document.getElementsByClassName("display").innerHTML = `Your Akan name is femaleAkan[3]`
+}
+else if (math.round(result) == 4 && gender === "female") {
+    document.getElementsByClassName("display").innerHTML = `Your Akan name is femaleAkan[4]`
+}
+else if (math.round(result) == 5 && gender === "female") {
+    document.getElementsByClassName("display").innerHTML = `Your Akan name is femaleAkan[5]`
+}
+else if (math.round(result) == 6 && gender === "female") {
+    document.getElementsByClassName("display").innerHTML = `Your Akan name is femaleAkan[6]`
+}
+else if (result == 0 && gender === "male") {
+    document.getElementsByClassName("display").innerHTML = `Your Akan name is maleAkan[0]`
+}
+else if (result == 1 && gender === "male") {
+    document.getElementsByClassName("display").innerHTML = `Your Akan name is maleAkan[1]`
+}
+else if (result == 2 && gender === "male") {
+    document.getElementsByClassName("display").innerHTML = `Your Akan name is maleAkan[2]`
+}
+else if (result == 3 && gender === "male") {
+    document.getElementsByClassName("display").innerHTML = `Your Akan name is maleAkan[3]`
+}
+else if (result == 4 && gender === "male") {
+    document.getElementsByClassName("display").innerHTML = `Your Akan name is maleAkan[4]`
+}
+else if (result == 5 && gender === "male") {
+    document.getElementsByClassName("display").innerHTML = `Your Akan name is maleAkan[5]`
+}
+else if (result == 6 && gender === "male") {
+    document.getElementsByClassName("display").innerHTML = `Your Akan name is maleAkan[6]`
+}
