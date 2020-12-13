@@ -9,39 +9,45 @@
 </head>
 <body>
     <header><h1>AKAN NAMES</h1></header>
-    <div class="container" style="background-image: url(./images/background.jpg);">
+    <div class="container">
         <div class="jumbotron">
             <div class="row">
-                <div class="intro">
-                    <p>Akan is a traditional naming system in Ghana that uses days of the week to assign names. These names are assigned according to the gender of the baby. Male and female babies have different Akan names.</p>
-                    <p>This application is able to take your birth date and process it to give your Akan name on submission.</p>
+                <div class="col-md-6">
+                    <div class="intro">
+                        <p>Akan is a traditional naming system in Ghana that uses days of the week to assign names. These names are assigned according to the gender of the baby. Male and female babies have different Akan names.</p>
+                        <p>This application is able to take your birth date and process it to give your Akan name on submission.</p>
+                    </div>
                 </div> 
-                <div class="form">
-                    <p>To find out your Akan Name, fill out this form and click on submit.</p>
-                    <form action="">
-                        <label>Year of birth</label><br>
-                        <input type="text" class="year" placeholder="Year e.g 1999"><br>
-                        <br>
-                        <label>Month of birth</label><br>
-                        <input type="text" class="month" placeholder="Month e.g 10"><br>
-                        <br>
-                        <label >Date of birth</label><br>
-                        <input type="text" class="date" placeholder="Date e.g 16"><br>
-                        <br>
-                        <label for="gender">Gender</label><br>
-                        <br>
-                        <input type="radio" class="gender" value="female" checked>Female
-                        <br><br>
-                        <input type="radio" class="gender" value="male">Male
-                        <br><br>
-                        <input type="submit" value="SUBMIT" onclick="output()">
-                    </form>
-                    <label for="display"><p class="display"></p></label>
-                </div>
+                <div class="col-md-6">
+                    <div class="form">
+                        <p>To find out your Akan Name, fill out this form and click on submit.</p>
+                        <form action="">
+                            <label>Year of birth</label><br>
+                            <input type="text" class="year" placeholder="Year e.g 1999"><br>
+                            <br>
+                            <label>Month of birth</label><br>
+                            <input type="text" class="month" placeholder="Month e.g 10"><br>
+                            <br>
+                            <label >Date of birth</label><br>
+                            <input type="text" class="date" placeholder="Date e.g 16"><br>
+                            <br>
+                            <label for="gender">Gender</label><br>
+                            <br>
+                            <input type="radio" class="gender" value="female" checked>Female
+                            <br><br>
+                            <input type="radio" class="gender" value="male">Male
+                            <br><br>
+                            <input type="submit" value="SUBMIT" onclick="output()">
+                        </form>
+                        <label for="display"><p class="display"></p></label>
+                    </div>
+                </div>    
             </div>    
         </div>     
     </div>
-    <footer></footer>
+    <footer>
+        
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

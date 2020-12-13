@@ -3,3 +3,8 @@ header{
     background-color: skyblue;
     
 }
+body{
+    background-image: url(https://thumbs.dreamstime.com/b/design-faded-grunge-texture-colors-pastel-beautiful-background-texture-vintage-style-design-red-wallpaper-173849763.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
