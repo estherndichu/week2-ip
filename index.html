@@ -18,31 +18,29 @@
             <div class="form">
                 <p>To find out your Akan Name, fill out this form and click on submit.</p>
                 <form action="">
-                    <label for="">Year of birth</label><br>
+                    <label>Year of birth</label><br>
                     <input type="text" class="year" placeholder="Year e.g 1999"><br>
                     <br>
-                    <label for="">Month of birth</label><br>
+                    <label>Month of birth</label><br>
                     <input type="text" class="month" placeholder="Month e.g 10"><br>
                     <br>
-                    <label for="">Date of birth</label><br>
+                    <label >Date of birth</label><br>
                     <input type="text" class="date" placeholder="Date e.g 16"><br>
                     <br>
-                    <label for="">Gender</label><br>
+                    <label for="gender">Gender</label><br>
                     <br>
-                    <input type="radio" name="gender" class="gender" value="female">Female
+                    <input type="radio" class="gender" value="female" checked>Female
                     <br><br>
-                    <input type="radio" name="gender" class="gender" value="male">Male
+                    <input type="radio" class="gender" value="male">Male
                     <br><br>
-                    <button onclick="output()">
-                        <h4>Submit</h4>
-                    </button>
+                    <input type="submit" value="SUBMIT" onclick="output()">
                 </form>
+                <label for="display"><p class="display"></p></label>
                 <p class="akanName"></p>
             </div>
-            <p class="display"></p>
         </div>    
     </div>
     <footer></footer>
-    <script src="/index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
