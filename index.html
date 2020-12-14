@@ -3,58 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/styles.css">
     <title>Akan Names</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 </head>
 <body>
-    <header>
-        <h1>Akan names</h1>
-        <p>The traditional naming system in Ghana</p>
-    </header>
-    <div class="container">
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="intro">
-                        <p>Akan is a traditional naming system in Ghana that uses days of the week to assign names. These names are assigned according to the gender of the baby. Male and female babies have different Akan names.</p>
-                        <p>This application is able to take your birth date and process it to give your Akan name on submission.</p>
-                    </div>
-                </div> 
-                <div class="col-md-6">
-                    <div class="form">
-                        <p>To find out your Akan Name, fill out this form and click on submit.</p>
-                        <form action="">
-                            <label>Year of birth</label><br>
-                            <input type="text" class="year" placeholder="Year e.g 1999"><br>
-                            <br>
-                            <label>Month of birth</label><br>
-                            <input type="text" class="month" placeholder="Month e.g 10"><br>
-                            <br>
-                            <label >Date of birth</label><br>
-                            <input type="text" class="date" placeholder="Date e.g 16"><br>
-                            <br>
-                            <label for="gender">Gender</label><br>
-                            <br>
-                            <input type="radio" class="gender" value="female" checked>Female
-                            <br><br>
-                            <input type="radio" class="gender" value="male">Male
-                            <br><br>
-                            <input type="submit" value="SUBMIT" onclick="output()">
-                        </form>
-                        <label for="display"><p class="display"></p></label>
-                    </div>
-                </div>    
-            </div>    
-        </div>     
-    </div>
-    <footer>
-        <ul>
-            <p>Copyright</p>
-            <p class="name">estherndichu</p>
-            <p>2020</p>
-        </ul>
-    </footer>
-    <script src="./js/script.js"></script>
+    <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Year</label>
+          <input type="number" class="form-control" id="year" placeholder="eg 1990" required  min="1111"/>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Month</label>
+          <input type="number" class="form-control" id="month" placeholder="eg 5" required max="12" min="1" />
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Day</label>
+          <input type="number" class="form-control" id="day" placeholder="eg 24" required max="31" min="1" />
+        </div>
+        <div class="form-group">
+          <label for="select gender">Gender</label>
+          <select class="form-control" id="gender" required>
+            <option></option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <button onclick="output() " type="button" class="btn btn-success">
+            Submit
+          </button>
+  <script src="./css/scripts.js"></script>  
 </body>
 </html>
