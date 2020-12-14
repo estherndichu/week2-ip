@@ -3,13 +3,12 @@ var maleAkan = [" Kwasi"," Kwadwo"," Kwabena"," Kwaku"," Yaw"," Kofi"," Kwame"];
 
 function output() {
 
-var year = document.getElementById("year").value;
 var mm = parseInt(document.getElementById("month").value);
 var dd = parseInt(document.getElementById("date").value);
 var gender = document.getElementById("gender").value;
-var yy = parseInt(year.substr(2, 4));
-var cc = parseInt(year.substr(0, 2));
-var day = Math.abs(parseInt(((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7)
+var yy = parseInt(document.getElementById("year").value);
+var cc = parseInt(document.getElementById("century").value);
+var day =(parseInt(((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7)
 
 if(year <= 0 || year == " ") {
     document.getElementById("display").innerHTML = ("Enter a valid year")
