@@ -1,5 +1,6 @@
 var femaleAkan = [" Akosua"," Adwoa"," Abenaa"," Akua"," Yaa"," Afua"," Ama"];
 var maleAkan = [" Kwasi"," Kwadwo"," Kwabena"," Kwaku"," Yaw"," Kofi"," Kwame"];
+
 function output() {
 
 var year = document.getElementById("year").value;
@@ -13,11 +14,11 @@ var day = Math.abs(parseInt(((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (m
 if(year <= 0 || year == " ") {
     document.getElementById("display").innerHTML = ("Enter a valid year")
 }
-else if (mm <= 0 || mm > 12 || month == " ") {
+else if (mm <= 0 || mm > 12 || mm == " ") {
     document.getElementById("display").innerHTML = ("Enter valid month")
 }
-else if (dd < 1 || dd > 31 || dd == "") {
-    document.getElementById("display").innerHTML ("Enter valid date")
+else if (dd < 1 || dd > 31 || dd == " ") {
+    document.getElementById ("display").innerHTML = ("Enter valid date")
 }
 else if (gender === "female") {
         document.getElementById("display").innerHTML = ("Your Akan name is  " + femaleAkan[day])

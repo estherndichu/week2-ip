@@ -1,15 +1,7 @@
-header, footer{
+.container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h1 {
     text-align: center;
-    text-transform: uppercase;
-    border: 20px;
-    padding: 20px;
-    margin: 20px;
-}
-.name{
-    text-transform: lowercase;
-}
-body{
-    background-color: gray;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
