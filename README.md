@@ -10,7 +10,7 @@
 * click on submit button.
 * The Akan name is displayed below the submit button.
 ## Known Bugs
-{Are there issues that have not yet been resolved that you want to let users know you know? Outline any issues that would impact use of your application. Share any workarounds that are in place. }
+{The application still runs when an invalid date is run e.g 31/04/1990}
 ## Technologies Used
 {This application has been built using HTML,CSS and JavaScript.}
 ## Support and contact details
