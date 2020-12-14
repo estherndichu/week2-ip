@@ -8,40 +8,44 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="jumbotron">
-            <h1>Akan names</h1>
+    <header>
+        <h1>Akan names</h1>
+        <p>The traditional naming system in Ghana</p>
+
+    </header>
+    
             <div class="row">
-                <div class="col-md-5">
-                    <p>The traditional naming system in Ghana</p>
+                <div class="col-md-6">
                     <p>Akan is a traditional naming system in Ghana that uses days of the week to assign names. These names are assigned according to the gender of the baby. Male and female babies have different Akan names.</p>
                     <p>This application is able to take your birth date and process it to give your Akan name on submission.</p>
+                    <p>The Akan name is displayed at the bottom of the submit button.</p>
+
                 </div>
-                <div class="col-md-2"></div>      
+                <div class="col-md-1"></div>      
                 <div class="col-md-5">  
                     <p>To find out your Akan Name, fill out this form and click on submit.</p>
                     <form>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Century</label>
-                            <input type="number" class="form-control" id="century" placeholder="eg 19 if born in 1999 or 20 if born in 2001"/>
+                            <input type="number" class="form-control" id="century" placeholder="eg 19 if born in 1999 or 20 if born in 2001" required/>
                             </div>
                         <div class="form-group">
                         <label for="exampleFormControlInput1">Year of Birth</label>
-                        <input type="number" class="form-control" id="year" placeholder="eg 99"/>
+                        <input type="number" class="form-control" id="year" placeholder="eg 99" required/>
                         </div>
                         <div class="form-group">
                         <label for="exampleFormControlInput1">Birth Month</label>
-                        <input type="number" class="form-control" id="month"/>
+                        <input type="number" class="form-control" id="month" required/>
                         </div>
                         <div class="form-group">
                         <label for="exampleFormControlInput1">Birth Date</label>
-                        <input type="number" class="form-control" id="date"/>
+                        <input type="number" class="form-control" id="date" required/>
                         </div>
                         <div class="form-group">
                         <label for="select gender">Gender</label>
                         <select class="form-control" id="gender">
-                            <option value="male">Female</option>
-                            <option value="female">Male</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
                         </select>
                         </div>
                         <button onclick="output() " type="button" class="btn btn-success">
