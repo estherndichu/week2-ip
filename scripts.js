@@ -10,16 +10,16 @@ var yy = parseInt(document.getElementById("year").value);
 var cc = parseInt(document.getElementById("century").value);
 var day =(parseInt(((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7)
 
-if(cc == ""){
+if(cc <= 0 || cc === " "){
     alert("Enter the century you were born")
 } else
-if(yy <= 0 || yy == " ") {
+if(yy>2020 || yy <= 0 || yy == " ") {
     alert("Enter a valid year")
-}
-else if (mm <= 0 || mm > 12 || mm == " ") {
+}else 
+if (mm <= 0 || mm > 12 || mm == " ") {
     alert("Enter valid month")
-}
-else if (dd <= 0 || dd > 31 || dd == " ") {
+}else 
+if (dd < 1 || dd > 31 || dd == " ") {
     alert("Enter valid date")
 }
 else if (gender === "female") {
